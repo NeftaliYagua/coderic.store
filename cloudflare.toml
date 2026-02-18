@@ -1,0 +1,33 @@
+# Cloudflare Pages configuration
+# Documentation: https://developers.cloudflare.com/pages/platform/build-configuration/
+
+[build]
+command = "bundle exec jekyll build"
+output_directory = "_site"
+
+[build.environment]
+RUBY_VERSION = "3.4.4"
+BUNDLE_WITHOUT = "development test"
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+X-XSS-Protection = "1; mode=block"
+Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+for = "/images/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.js"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.css"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"

@@ -1,0 +1,21 @@
+<div class="px-4 sm:px-6 py-6 sm:py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center max-w-6xl mx-auto">
+        {% if include.image_position == 'left' %}
+        <div class="order-2 md:order-1">
+            <img src="https://picsum.photos/id/{{ include.image_id }}/600/400" alt="{{ include.title }}" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+        <div class="order-1 md:order-2">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">{{ include.title }}</h3>
+            <p class="text-base sm:text-lg text-gray-700">{{ include.description }}</p>
+        </div>
+        {% else %}
+        <div class="order-1">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">{{ include.title }}</h3>
+            <p class="text-base sm:text-lg text-gray-700">{{ include.description }}</p>
+        </div>
+        <div class="order-2">
+            <img src="https://picsum.photos/id/{{ include.image_id }}/600/400" alt="{{ include.title }}" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,132 @@
+# Coderic Fintech - Información de la Empresa
+
+name: "Coderic Fintech"
+tagline: "Tecnología Financiera"
+description: "Canal de comercialización para servicios financieros. Soluciones FinTech especializadas para instituciones financieras modernas."
+
+# Información Corporativa
+parent_company: "Coderic"
+founded: "2004"
+network: "FINTECH"
+
+# Misión y Visión
+mission: "Empoderar a las instituciones financieras con soluciones innovadoras, seguras y escalables de tecnología financiera que impulsen la transformación digital y la excelencia operacional."
+vision: "Convertirnos en el proveedor líder de soluciones integrales de tecnología financiera, permitiendo a nuestros clientes navegar el panorama en evolución de las finanzas digitales con confianza y agilidad."
+
+# Valores Fundamentales
+values:
+  - title: "Innovación"
+    description: "Impulsamos constantemente los límites de la tecnología financiera y empresarial, desarrollando soluciones de vanguardia que anticipan y satisfacen las necesidades en evolución de nuestros clientes."
+    icon: "innovation"
+  
+  - title: "Seguridad"
+    description: "Priorizamos la seguridad e integridad de los datos financieros, implementando medidas robustas para proteger los activos de nuestros clientes y mantener su confianza."
+    icon: "security"
+  
+  - title: "Excelencia"
+    description: "Estamos comprometidos a entregar calidad excepcional en cada solución que proporcionamos, asegurando que nuestros clientes reciban el mejor servicio y resultados posibles."
+    icon: "excellence"
+  
+  - title: "Asociación"
+    description: "Construimos relaciones duraderas con nuestros clientes, actuando como socios de confianza en su viaje de transformación digital."
+    icon: "partnership"
+  
+  - title: "Cumplimiento"
+    description: "Aseguramos que todas nuestras soluciones cumplan con los más altos estándares regulatorios, ayudando a los clientes a navegar requisitos de cumplimiento complejos con facilidad."
+    icon: "compliance"
+  
+  - title: "Escalabilidad"
+    description: "Nuestras soluciones están diseñadas para crecer con tu negocio, proporcionando la flexibilidad y escalabilidad necesarias para adaptarse a las demandas cambiantes del mercado."
+    icon: "scalability"
+
+# Estadísticas
+stats:
+  - number: "500+"
+    label: "Instituciones Financieras Atendidas"
+    icon: "bank"
+  
+  - number: "99.9%"
+    label: "Tiempo de Actividad del Sistema"
+    icon: "uptime"
+  
+  - number: "$50B+"
+    label: "Transacciones Procesadas Anualmente"
+    icon: "transactions"
+  
+  - number: "24/7"
+    label: "Soporte Experto"
+    icon: "support"
+
+# Información de Contacto
+contact:
+  email: "hello@coderic.co"
+  support: "support@coderic.co"
+  sales: "sales@coderic.co"
+  billing: "billing@coderic.co"
+  
+# Redes Sociales
+social:
+  twitter: "https://x.com/Coderic"
+  linkedin: "https://linkedin.com/company/coderic/"
+  github: "https://github.com/Coderic"
+
+# Propiedades Relacionadas del Ecosistema
+coderic_network:
+  - name: "Coderic Organization"
+    url: "https://coderic.org"
+    description: "Organización y centro de coordinación de Coderic"
+  
+  - name: "Coderic Cloud"
+    url: "https://coderic.cloud"
+    description: "División de infraestructura y servicios en la nube"
+  
+  - name: "Coderic Content Hub"
+    url: "https://coderic.net"
+    description: "Plataforma de contenido y recursos digitales"
+  
+  - name: "Coderic Fintech"
+    url: "https://coderic.co"
+    description: "División de soluciones de tecnología financiera"
+  
+  - name: "Coderic Business"
+    url: "https://business.coderic.co"
+    description: "División de soluciones empresariales y productos Prodaric"
+  
+  - name: "Coderic Store"
+    url: "https://coderic.store"
+    description: "Tienda en línea de equipos informáticos y tecnología"
+
+# Categorías de Servicios
+service_pillars:
+  - title: "Soluciones Bancarias"
+    description: "Sistemas integrales de banca central y gestión de préstamos"
+    services: ["Banca Central", "Gestión de Préstamos", "Banca Digital", "Procesamiento de Pagos"]
+  
+  - title: "Tecnología Blockchain"
+    description: "Plataformas blockchain avanzadas para contabilidad transparente"
+    services: ["Contabilidad Blockchain", "Contratos Inteligentes", "Libros Mayores Distribuidos", "Integración Cripto"]
+  
+  - title: "Riesgo y Cumplimiento"
+    description: "Sistemas robustos de gestión de riesgos y cumplimiento regulatorio"
+    services: ["Evaluación de Riesgos", "Gestión de Cumplimiento", "AML/KYC", "Reportes Regulatorios"]
+  
+  - title: "Infraestructura de Mercado"
+    description: "Infraestructura de mercado financiero para trading moderno"
+    services: ["Sistemas de Pago", "Liquidación de Valores", "Contrapartes Centrales", "Repositorios de Comercio"]
+
+# Certificaciones y Cumplimiento
+certifications:
+  - "ISO 27001 - Gestión de Seguridad de la Información"
+  - "PCI DSS - Seguridad de Datos de la Industria de Tarjetas de Pago"
+  - "SOC 2 Tipo II - Seguridad y Disponibilidad"
+  - "Cumplimiento GDPR - Protección de Datos"
+  - "Basel III - Regulaciones Bancarias"
+  - "MiFID II - Mercados de Instrumentos Financieros"
+
+# Stack Tecnológico
+technology:
+  languages: ["Python", "Java", "Go", "Node.js", "Ruby", "Scala", "PHP", "Clojure", ".NET"]
+  blockchain: ["Ethereum", "Hyperledger Fabric", "Corda", "Stellar"]
+  cloud: ["AWS", "Azure", "Google Cloud", "Cloudflare"]
+  security: ["Auth0", "OAuth 2.0", "JWT", "SSL/TLS", "Cifrado End-to-End"]
+  databases: ["PostgreSQL", "MongoDB", "Redis", "Cassandra", "TimescaleDB"]

@@ -1,0 +1,146 @@
+---
+layout: page
+---
+{% assign company = site.data.company %}
+
+<!-- Hero Section - Portal Navigation -->
+<div class="bg-stone-800 jumbotron relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        <div class="flex flex-col lg:flex-row items-center gap-8">
+            <!-- Content -->
+            <div class="w-full lg:w-1/2 text-white text-center lg:text-left">
+                <div class="inline-flex rounded-full text-base sm:text-lg border-stone-500 text-orange-500 border-2 px-3 py-1 mb-4">
+                    <svg class="h-5 w-5 sm:h-6 sm:w-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
+                        <rect x="2" y="28" width="28" height="2"/>
+                        <path d="M27,11a1,1,0,0,0,1-1V7a1,1,0,0,0-.66-.94l-11-4a1,1,0,0,0-.68,0l-11,4A1,1,0,0,0,4,7v3a1,1,0,0,0,1,1H6V24H4v2H28V24H26V11ZM6,7.7,16,4.06,26,7.7V9H6ZM18,24H14V11h4ZM8,11h4V24H8ZM24,24H20V11h4Z"/>
+                    </svg>
+                    {{ company.network | upcase }}
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4">
+                    Portal de Servicios Financieros
+                </h1>
+                <p class="text-base sm:text-lg mb-3 sm:mb-4 text-gray-200">
+                    {{ company.description }}
+                </p>
+                <p class="text-sm sm:text-base mb-6 text-gray-300">
+                    Parte del ecosistema {{ company.parent_company }} | Servicios financieros especializados
+                </p>
+            </div>
+            <!-- Image -->
+            <div class="w-full lg:w-1/2 flex justify-center">
+                <img src="/images/decabyte.jpg" class="w-64 sm:w-80 lg:w-96 max-h-[280px] sm:max-h-[320px] object-contain object-center rounded-lg" alt="Prototipo de modelado 3D en el que se inspiró el proyecto Decabyte" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Stats Bar -->
+<div class="bg-orange-600 text-white py-6 sm:py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center">
+            <div>
+                <div class="text-2xl sm:text-3xl font-bold">{{ company.stats[0].number }}</div>
+                <div class="text-xs sm:text-sm mt-1">{{ company.stats[0].label }}</div>
+            </div>
+            <div>
+                <div class="text-2xl sm:text-3xl font-bold">{{ company.stats[1].number }}</div>
+                <div class="text-xs sm:text-sm mt-1">{{ company.stats[1].label }}</div>
+            </div>
+            <div>
+                <div class="text-2xl sm:text-3xl font-bold">{{ company.stats[2].number }}</div>
+                <div class="text-xs sm:text-sm mt-1">{{ company.stats[2].label }}</div>
+            </div>
+            <div>
+                <div class="text-2xl sm:text-3xl font-bold">{{ company.stats[3].number }}</div>
+                <div class="text-xs sm:text-sm mt-1">{{ company.stats[3].label }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portal Navigation - FinTech Services -->
+<section id="fintech" class="py-12 sm:py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
+                </svg>
+                Servicios Financieros
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                Servicios FinTech
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                Soluciones financieras especializadas para instituciones modernas. Cada servicio incluye documentación detallada, especificaciones técnicas y guías de implementación basadas en estándares internacionales.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {% for service in site.data.services.fintech_services %}
+            <a href="{{ service.url }}" class="group bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-orange-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="flex items-center justify-center w-20 h-20 bg-orange-100 rounded-xl mb-6 group-hover:bg-orange-500 transition-colors duration-300 mx-auto">
+                    <svg class="w-10 h-10 text-orange-600 group-hover:text-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M29.391,14.527L17.473,2.609C17.067,2.203,16.533,2,16,2c-0.533,0-1.067,0.203-1.473,0.609L2.609,14.527 C2.203,14.933,2,15.466,2,16s0.203,1.067,0.609,1.473l11.917,11.917C14.933,29.797,15.467,30,16,30c0.533,0,1.067-0.203,1.473-0.609 l11.917-11.917C29.797,17.067,30,16.534,30,16S29.797,14.933,29.391,14.527z M16,28.036L3.965,16L16,3.964L28.036,16L16,28.036z"/>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center group-hover:text-orange-600 transition-colors">
+                    {{ service.name }}
+                </h3>
+                <p class="text-base text-gray-600 text-center mb-4 leading-relaxed">
+                    {{ service.description }}
+                </p>
+                <div class="flex items-center justify-center text-orange-600 font-semibold group-hover:text-orange-500">
+                    <span>Explorar Servicio</span>
+                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<!-- Why Choose Us Section -->
+<div class="py-12 sm:py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 sm:mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">¿Por qué elegir Coderic Fintech?</h2>
+            <p class="text-lg sm:text-xl text-gray-600">Confiado por instituciones financieras en todo el mundo</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            {% for value in company.values limit:3 %}
+            <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md text-center">
+                <div class="bg-orange-100 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                    <svg class="w-8 h-8 sm:w-10 sm:h-10 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-stone-800">{{ value.title }}</h3>
+                <p class="text-sm sm:text-base text-gray-600">{{ value.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Coderic Ecosystem Section -->
+<div class="py-12 sm:py-16 bg-stone-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 sm:mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Parte del Ecosistema Coderic</h2>
+            <p class="text-lg sm:text-xl text-gray-300">{{ company.description }}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {% for property in company.coderic_network %}
+            <a href="{{ property.url }}" target="_blank" class="bg-stone-700 p-4 sm:p-6 rounded-lg hover:bg-stone-600 transition-colors duration-300 text-center">
+                <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-orange-400">{{ property.name }}</h3>
+                <p class="text-sm text-gray-300">{{ property.description }}</p>
+                <div class="mt-3 sm:mt-4 text-orange-500 text-sm font-semibold">Conocer Más →</div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

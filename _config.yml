@@ -1,0 +1,189 @@
+url: "https://coderic.co"
+baseurl: ""
+title: "Coderic"
+subtitle: "Fintech"
+description: "Servicios FinTech. Soluciones financieras especializadas para instituciones modernas. Canal de comercialización para servicios financieros."
+network: "FINTECH"
+
+# Theme
+remote_theme: Coderic/jekyll-theme-coderic
+
+# Logo
+logo: "/images/logo.svg"
+
+# Navigation with flyout menu support
+navigation:
+  - label: "Banca Central"
+    url: "/core"
+    has_flyout: true
+    flyout_sections:
+      - title: "Servicios de Banca Central"
+        links:
+          - label: "Soluciones Bancarias"
+            url: "/core#soluciones"
+            description: "Sistemas bancarios integrales"
+          - label: "Gestión de Préstamos"
+            url: "/core#prestamos"
+            description: "Sistemas flexibles de gestión de préstamos"
+          - label: "Procesamiento de Transacciones"
+            url: "/core#transacciones"
+            description: "Procesamiento seguro de transacciones"
+          - label: "Analíticas Avanzadas"
+            url: "/core#analytics"
+            description: "Herramientas de análisis y reportes"
+          - label: "CRM Financiero"
+            url: "/core#crm"
+            description: "Gestión de relaciones con clientes"
+          - label: "Cumplimiento"
+            url: "/core#compliance"
+            description: "Cumplimiento regulatorio bancario"
+  - label: "Contabilidad Blockchain"
+    url: "/accounting"
+    has_flyout: true
+    flyout_sections:
+      - title: "Soluciones Blockchain"
+        links:
+          - label: "Soluciones de Terceros"
+            url: "/accounting#third-party"
+            description: "Plataformas blockchain de terceros"
+          - label: "Plataformas Compartidas"
+            url: "/accounting#shared"
+            description: "Blockchain compartido rentable"
+          - label: "Plataformas Dedicadas"
+            url: "/accounting#dedicated"
+            description: "Blockchain dedicado personalizado"
+          - label: "Escalabilidad"
+            url: "/accounting#scalability"
+            description: "Escalabilidad de plataformas blockchain"
+          - label: "Seguridad"
+            url: "/accounting#security"
+            description: "Seguridad y cumplimiento blockchain"
+          - label: "Soporte"
+            url: "/accounting#support"
+            description: "Soporte técnico especializado"
+  - label: "Gestión de Riesgos"
+    url: "/risks"
+    has_flyout: true
+    flyout_sections:
+      - title: "Sistema de Gestión de Riesgos"
+        links:
+          - label: "Identificación de Riesgos"
+            url: "/risks#identificacion"
+            description: "Detección de riesgos potenciales"
+          - label: "Evaluación de Riesgos"
+            url: "/risks#evaluacion"
+            description: "Análisis de impacto y probabilidad"
+          - label: "Mitigación de Riesgos"
+            url: "/risks#mitigacion"
+            description: "Estrategias de reducción de riesgos"
+          - label: "Monitoreo Continuo"
+            url: "/risks#monitoreo"
+            description: "Sistemas de monitoreo en tiempo real"
+          - label: "Cumplimiento Regulatorio"
+            url: "/risks#compliance"
+            description: "Cumplimiento con regulaciones"
+          - label: "Soporte"
+            url: "/risks#support"
+            description: "Soporte técnico y consultoría"
+  - label: "Infraestructura de Mercado Financiero"
+    url: "/fmi"
+    has_flyout: true
+    flyout_sections:
+      - title: "Infraestructura FMI"
+        links:
+          - label: "Sistemas de Pago"
+            url: "/fmi#pagos"
+            description: "Sistemas de pago robustos"
+          - label: "Liquidación de Valores"
+            url: "/fmi#liquidacion"
+            description: "Plataformas de liquidación"
+          - label: "Depósitos Centrales"
+            url: "/fmi#depositos"
+            description: "Custodia centralizada de valores"
+          - label: "Contrapartes Centrales"
+            url: "/fmi#ccp"
+            description: "Gestión de riesgo de contraparte"
+          - label: "Repositorios de Comercio"
+            url: "/fmi#repositorios"
+            description: "Registros de transacciones"
+          - label: "Interoperabilidad"
+            url: "/fmi#interoperabilidad"
+            description: "Integración con sistemas existentes"
+  - label: "Cumplimiento Regulatorio"
+    url: "/compliance"
+    has_flyout: true
+    flyout_sections:
+      - title: "Estándares y Regulaciones"
+        links:
+          - label: "PCI DSS"
+            url: "/compliance#pci-dss"
+            description: "Seguridad de datos de tarjetas de pago"
+          - label: "EMV"
+            url: "/compliance#emv"
+            description: "Estándares EMV para transacciones chip"
+          - label: "ISO 8583"
+            url: "/compliance#iso-8583"
+            description: "Protocolo de mensajería financiera"
+          - label: "3D Secure"
+            url: "/compliance#3ds"
+            description: "Autenticación de pagos en línea"
+          - label: "ISO 20022"
+            url: "/compliance#iso-20022"
+            description: "Estándar de mensajería financiera moderna"
+          - label: "KYC/AML"
+            url: "/compliance#kyc-aml"
+            description: "Conozca a su Cliente y Prevención de Lavado"
+          - label: "Basel III"
+            url: "/compliance#basel-iii"
+            description: "Regulaciones de capital bancario"
+          - label: "MiFID II"
+            url: "/compliance#mifid-ii"
+            description: "Mercados de Instrumentos Financieros"
+          - label: "GDPR"
+            url: "/compliance#gdpr"
+            description: "Protección de datos personales"
+
+# Footer Links
+footer_links:
+  - label: "Documentation"
+    url: "https://github.com/Coderic/coderic.co"
+  - label: "About"
+    url: "/about"
+
+# Legal URLs
+privacy_url: "/privacy"
+legal_url: "/legal"
+tos_url: "/tos"
+
+# Auth URLs
+profile_url: "/profile"
+dashboard_url: "/dashboard"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-github-metadata
+
+# Sass configuration
+sass:
+  style: compressed
+  sourcemap: never
+
+# Exclude files from processing
+exclude:
+  - DEVELOPER_GUIDE.md
+  - REFACTORING_SUMMARY.md
+  - CONTENT_ENHANCEMENT_SUMMARY.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .asset-cache
+  - .jekyll-assets-cache
+  - .bundle
+  - Banking

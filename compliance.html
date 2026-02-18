@@ -1,0 +1,28 @@
+---
+layout: page
+title: Cumplimiento Regulatorio
+---
+{% assign service = site.data.services.services | where: "id", "compliance" | first %}
+
+{% include service-hero.html 
+  icon=service.icon 
+  subtitle=service.subtitle 
+  hero_title=service.hero_title 
+  hero_description=service.hero_description 
+  hero_image=service.hero_image 
+%}
+
+<div class="py-12">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            {% for section in service.sections %}
+                {% include service-section.html 
+                  title=section.title 
+                  description=section.description 
+                  image_id=section.image_id 
+                  image_position=section.image_position 
+                %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
